@@ -30,7 +30,7 @@ public class Test {
         System.out.println("Spent money: $"+school.getTotalMoneySpent());
         System.out.println();
 
-        student1.pay(6000);
+        student2.pay(6000);
         System.out.println(student2.getName()+" remained fees: $"+student2.getRemainingFees());
 
         teacher2.receiveSalary();
