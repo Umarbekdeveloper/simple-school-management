@@ -5,8 +5,8 @@ public class School {
     private  int studentCount =0;
 
     public School() {
-        this.teachers = new Teacher[100];
-        this.students = new Student[100];
+        this.teachers = new Teacher[10];
+        this.students = new Student[10];
     }
 
     public Teacher[] getTeachers() {
@@ -34,11 +34,25 @@ public class School {
     }
 
     public void addTeacher(Teacher teacher){
+        if (teacherCount>=teachers.length){
+            Teacher[] temp = new Teacher[teachers.length*2];
+            for (int i = 0; i < temp.length; i++) {
+                temp[i]=teachers[i];
+            }
+            teachers=temp;
+        }
         teachers[teacherCount++]=teacher;
         teacher.setSchool(this);
     }
 
     public void addStudent(Student student){
+        if (studentCount>=students.length){
+            Student[] temp = new Student[students.length*2];
+            for (int i = 0; i < temp.length; i++) {
+                temp[i]=students[i];
+            }
+            students=temp;
+        }
         students[studentCount++]=student;
         student.setSchool(this);
     }
