@@ -1,3 +1,5 @@
+package entities;
+
 public class Student {
     private int id;
     private String firstName;
@@ -65,7 +67,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "entities.Student{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

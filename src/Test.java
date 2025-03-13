@@ -1,3 +1,7 @@
+import entities.School;
+import entities.Student;
+import entities.Teacher;
+
 public class Test {
     public static void main(String[] args) {
         School school = new School();

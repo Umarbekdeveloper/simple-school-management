@@ -1,3 +1,5 @@
+package entities;
+
 public class Teacher {
     private int id;
     private String firstName;
@@ -13,7 +15,7 @@ public class Teacher {
         this.salary = salary;
         salaryEarned = 0.0;
     }
-//    public Teacher(int id, String firstName, String lastName, double salary) {
+//    public entities.Teacher(int id, String firstName, String lastName, double salary) {
 //        this.id = id;
 //        this.firstName = firstName;
 //        this.lastName = lastName;
@@ -62,7 +64,7 @@ public class Teacher {
 
     @Override
     public String toString() {
-        return "Teacher{" +
+        return "entities.Teacher{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
